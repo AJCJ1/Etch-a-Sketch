@@ -2,7 +2,7 @@
 
 function eventHandler(x) {
 var pixelNum = x;
-console.log(pixelNum);
+
 
     return function colorChanger () { // executed if the event occurs
     document.getElementById(pixelNum).setAttribute('style', 'background-color: rgb(255, 204, 0)');
@@ -27,8 +27,9 @@ function gridCreation() {
     gridCreation(); // creates the grid of 255 divs
 
 
-
-
+function sizer() {
+    document.getElementById('slidersDiv').style.display = 'flex';
+}
 
 function resetFunct() {
     for (x=0; x<256; x++) {
@@ -44,18 +45,12 @@ for (x=0; x<256; x++) {
     document.getElementById(x).addEventListener('mouseout', eventHandler(x));
 }
 
-
+document.getElementById('gridSize').addEventListener('click', sizer);
 /*
 
-got rid of the queryselectorall because someone said just add them using a loop.
 
-so they all have an event listener that runs colorchanger
+I now want the grid size button to display an ALERT
+with two <input type='range'>
 
 
-
-now i want each one to have an event listener to
-run the colorChanger function.
-
-alternatively, i could change their class to
-something with a different markup... easier.
 */
