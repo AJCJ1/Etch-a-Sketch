@@ -10,9 +10,20 @@
 
 <body>
     <div class="menu" id="menu" name="menu-bar"> 
-        <ul>
+        <ul class="menu-ul">
             <li><button id="reset">Reset</button></li>
             <li><button id="rc">Random Colour</button></li>
+            <li id='gridSize' style='float:right'><button>Grid Size</button></li>
+            <div class="slidersDiv" id="slidersDiv">
+            <li class="sliderLiVertical" id="slidersDivV">
+                    <label for="vertical">Vertical</label>
+                    <input id="vertical" type="range" min="1" max="16"> 
+            </li>
+            <li class="sliderLiHorizontal" id="slidersDivH">
+                    <label for="horizontal">Horizontal</label>
+                    <input id="horizontal" type="range" min="1" max="16">
+            </li>
+            </div>
         </ul>
     </div>
 
