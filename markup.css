@@ -1,0 +1,73 @@
+* {
+font-family:'Times New Roman', Times, serif;
+padding:0;
+margin:0;
+background-color:cornflowerblue;
+overflow-x:visible;
+}
+
+.menu {
+position: sticky;
+top:0;
+width:100%;
+}
+
+ .menu ul{
+list-style-type: none;
+margin:0;
+padding:0;
+width:100%;
+font-size:large;
+text-align:center;
+align-items: stretch;
+display:inline-flex;
+flex-grow:1;
+}
+
+.menu ul li button {
+border:none;
+background-color: rgb(255, 204, 0);
+height:50px;
+width:100%;
+margin-right:20px;
+}
+
+.menu ul li button:hover{
+transition: 0.2s;
+background-color:cornflowerblue;
+}
+
+
+#gridDiv div:hover {
+background-color: rgb(255, 204, 0);
+transition:0.1s;
+}
+
+#gridDiv {
+width:100%;
+height:100%;
+
+position:absolute;
+border:2px solid rgb(255, 204, 0);   
+display:flex;
+flex-wrap:wrap;
+flex-basis:40px;
+height:500px;
+width:500px;
+margin-left:50px;
+margin-top:50px;
+}
+
+#gridDiv div {
+width:6.25%;
+height:6.25%;
+}
+
+
+
+/* 
+
+
+
+
+make color change on hover in grid
