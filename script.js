@@ -1,7 +1,14 @@
 // functions
 
-function colorChanger(number) {
-    console.log(number);
+function eventHandler(x) {
+var pixelNum = x;
+console.log(pixelNum);
+
+    return function colorChanger () { // executed if the event occurs
+    document.getElementById(pixelNum).setAttribute('style', 'background-color: rgb(255, 204, 0)');
+
+    }
+
 }
 
 function gridCreation() {
@@ -11,7 +18,7 @@ function gridCreation() {
             for (let x = 0; x < 256; x++) {
                 var theDiv = document.createElement('div');
                 theDiv.id = x;
-                theDiv.className = x;
+                theDiv.className = 'pixel';
                 toAdd.appendChild(theDiv);
                 
             }
@@ -24,13 +31,31 @@ function gridCreation() {
 
 
 function resetFunct() {
-        location.reload();
+    for (x=0; x<256; x++) {
+            document.getElementById(x).setAttribute('style', 'background-color: cornflowerblue');
+    }
 }
 
 // event listeners
 
 document.getElementById('reset').addEventListener('click', resetFunct);
 
-for (x = 0; x < 256; x++) {
-    document.getElementById(x).addEventListener('mouseout', colorChanger);
+for (x=0; x<256; x++) {
+    document.getElementById(x).addEventListener('mouseout', eventHandler(x));
 }
+
+
+/*
+
+got rid of the queryselectorall because someone said just add them using a loop.
+
+so they all have an event listener that runs colorchanger
+
+
+
+now i want each one to have an event listener to
+run the colorChanger function.
+
+alternatively, i could change their class to
+something with a different markup... easier.
+*/
