@@ -1,15 +1,12 @@
 * {
 font-family:Arial, Helvetica, sans-serif;
-padding:0;
-margin:0;
 background-color:cornflowerblue;
 overflow-x:visible;
+padding:0%;
+margin:0%;
+border:0%;
 }
-
-.menu {
-    margin-bottom:95px;
-}
- .menu ul{
+.menu ul{
 list-style-type: none;
 margin:0;
 padding:0;
@@ -17,111 +14,55 @@ width:100%;
 display:flex;
 flex-grow:1;
 }
-
 .menu ul li {
     width:100%;
 }
-
-
 .menu ul li button {
 border:none;
 background-color: rgb(255, 204, 0);
-height:75px;
+height:12.5vh;
 width:100%;
-margin-right:20px;
 font-size:larger;
 }
-
 .menu ul li button:hover{
 transition: 0.2s;
 background-color:cornflowerblue;
 }
 
+
+
+
+/* GRID MARKUP */
+
 #gridDiv div:hover {
-background-color: rgb(255, 204, 0);
-transition:0.1s;
+    background-color: rgb(255, 204, 0);
+    transition:0.1s;
 }
-
-#gridDiv {
-width:100%;
-height:100%;
-
-position:absolute;
-border:2px solid rgb(255, 204, 0);   
+#gridDiv { /* gridDiv is the div housing each pixel, housingDiv houses gridDiv */
 display:flex;
-flex-wrap:wrap;
-flex-basis:40px;
-height:500px;
-width:500px;
-margin-left:50px;
-margin-top:10px;
+flex:1;
+position:absolute;
+top:150px;
+width:100%;
+height:77.5vh;
+border:1px solid rgb(255, 234, 0);
+padding:0%;
+align-content: space-around;
 }
-
 #gridDiv div {
-width:6.25%;
-height:6.25%;
-background-color:transparent;
+width: 100%;
+height:100%;
 }
-
-.slidersDiv {
-    height:75px;
-    margin-bottom:10px;
-    position:absolute;
-    top:75px;
-    /*display:none;*/
-    background-color:rgb(255, 204, 0);
-    transition:0.3s;
-    justify-content: space-between;
-    flex-grow:1;
+    /*
+    display:flex;
     flex-wrap:wrap;
     width:100%;
+    height:77.5vh;
 }
-
-.slidersDiv label {
-    background-color:rgb(255, 204, 0);
-
-    width:100%
+    #gridDiv div {
+    width:100%;
+    height:100%;
+    background-color:transparent;
+    
 }
-
-.slidersDiv li {
-    background-color:rgb(255, 204, 0);
-
-}
-
-input[type="range"] {
-    -webkit-appearance: none;
-    margin-right: 15px;
-    margin-left:5px;
-  width: 500px;
-  height: 7px;
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 5px;
-  background-color: cornflowerblue;
-  background-size: 70% 100%;
-  background-repeat: no-repeat;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background: black;
-    cursor: ew-resize;
-    box-shadow: 0 0 2px 0 #555;
-    transition: background .3s ease-in-out;
-    z-index: 1;
-}
-
-
-
-
-
-
-
-
-/* 
-
-- when hover gridsize vertical menu with two sliders 1-16
-
 */
