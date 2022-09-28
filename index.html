@@ -9,25 +9,16 @@
 </head>
 
 <body>
+<header>
     <div class="menu" id="menu" name="menu-bar"> 
         <ul class="menu-ul">
             <li><button id="reset">Reset</button></li>
             <li><button id="rc">Random Colour</button></li>
-            <li id='gridSize' style='float:right'><button>Grid Size</button></li>
-            <div class="slidersDiv" id="slidersDiv">
-            <li class="sliderLiVertical" id="slidersDivV">
-                    <label for="vertical">Vertical</label>
-                    <input id="vertical" type="range" min="1" max="16"> 
-            </li>
-            <li class="sliderLiHorizontal" id="slidersDivH">
-                    <label for="horizontal">Horizontal</label>
-                    <input id="horizontal" type="range" min="1" max="16">
-            </li>
-            </div>
+            <li id='gridSize'><button>Grid Size</button></li>
         </ul>
     </div>
-
-<!-- theGrid div houses the gridDiv which is a flexbox -->
+</header>
+<!-- housingDiv houses the gridDiv which then has each pixel div inside of it -->
 
     <div class="housingDiv" id="housingDiv" name="housingDiv">
     </div> <!-- end grid -->
