@@ -37,14 +37,6 @@ return;
 
 1. change markup to adapt individual boxes to grid full size.
 
-
-
-
-problem im trying to solve is twofold. 
-1) when you initially run sizer function on page startup, colorChanger funct works! but when you run sizer again on click colorchanger doesn't work after that. the basic CSS does work, and hover will change bckgrnd cl.
-
-2) how to change grid size and markup shows grid as a box rather than a barcode.
-
 */
 
 function resetFunct() {
