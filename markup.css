@@ -34,11 +34,11 @@ background-color:cornflowerblue;
 
 /* GRID MARKUP */
 
-#gridDiv div:hover {
+.housingDic div:hover {
     background-color: rgb(255, 204, 0);
-    transition:0.1s;
+    transition:0.3s;
 }
-#gridDiv { /* gridDiv is the div housing each pixel, housingDiv houses gridDiv */
+.housingDiv { /* gridDiv is the div housing each pixel, housingDiv houses gridDiv */
 display:flex;
 flex:1;
 position:absolute;
@@ -49,7 +49,7 @@ border:1px solid rgb(255, 234, 0);
 padding:0%;
 align-content: space-around;
 }
-#gridDiv div {
+.housingDiv div {
 width: 100%;
 height:100%;
 }
@@ -66,3 +66,9 @@ height:100%;
     
 }
 */
+
+/* experiment */
+
+.filledInClass {
+    background-color: rgb(255, 204, 0);
+}
